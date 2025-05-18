@@ -1,18 +1,19 @@
 'use strict';
+/*
 
-const { MyMath } = require('./MyMath.js');
-const { Component } = require('./Component.js');
+require(path)
 
-const sum2n2 = MyMath.sum(2, 2);
-console.log(sum2n2);
-const multy3n5 = MyMath.multy(3, 5);
-console.log(multy3n5);
+HOW REQUIRE WORKS:
 
-const component = new Component();
-console.log(component);
+resolving -> loading -> wrappening -> evaluation -> catching
 
-/* 
-
-Створіть декілька функцій або класів, спробуйте їх експортувати у index.js
- 
-*/
+RESOLVING:
+  1) Core modules
+  2) File
+    *.js // *.json
+  3) 
+    3.1) package.json -> "main"
+    3.2) inex.js // index.json
+  4) node_modules
+  5) throw new Error()  
+  */
